@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+hr {
+  border-top: 1.5px solid #cccdd1cc;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+#slides-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  height: 100vh;
+  width: 100vw;
+  flex: 0 0 100vw;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: row;
+}
+.main {
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  position: relative;
+}
+.main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 10rem;
+  max-width: 35rem;
+}
+.form-header {
+  color: #000000;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4000000953674316rem;
+  font-weight: 700;
+  align-self: stretch;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+.form-step {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  align-self: stretch;
+}
+.form-indication {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  align-self: stretch;
+}
+.form-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  width: 100%;
+}
+.button {
+  border-radius: 0.25rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-primary {
+  padding: 1.25rem;
+  background: #ffcd29;
+  color: #000000;
+  flex-grow: 1;
+}
+
+.button-secondary {
+  padding: 1.25rem;
+  background: #e6e6e6;
+  color: #000000;
+  flex-shrink: 0;
+}
+
+.button-tertiary {
+  height: 100%;
+  align-items: center;
+  background: #e6e6e6;
+  padding: 0 0.5rem;
+  color: #000000;
+  flex-shrink: 0;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.form-field {
+  border: 1px solid #787b82;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  min-height: 3.5rem;
+  border-radius: 0.25rem;
+  font: 400 14px Poppins;
+}
+
+.form-select {
+  border: 1px solid #787b82;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  min-height: 2rem;
+  border-radius: 0.25rem;
+}
+
+.form-progress {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.step {
+  background: #d5dbe0;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.step.active {
+  background: #ffcd29;
+}
+
+.role-seniority {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+.logotype {
+  flex-shrink: 0;
+  width: 13.8125rem;
+  height: 3.5rem;
+  position: absolute;
+  right: 5.375rem;
+  top: 3.625rem;
+}
+
+.aside {
+  background: #027a48;
+  padding: 0rem 2.5rem 0rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+  align-items: flex-start;
+  justify-content: center;
+  width: 30%;
+  height: 100vh;
+}
+.aside-title,
+.aside-review-title {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7000000476837158rem;
+  font-weight: 500;
+  align-self: stretch;
+}
+.aside-description,
+.reviewer {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.reviewer-role {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.aside-note {
+  background: #2a4d41;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.aside-note-content {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  border: 1px solid #cccdd1;
+}
+
+table:has(tbody:empty) {
+  display: none;
+}
+
+td, th {
+  padding: 0.5rem;
+  border: 1px solid #cccdd1;
+}
+
+@media screen and (max-width: 1024px) {
+  .aside {
+    display: none;
+  }
+  .main {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .logotype {
+    position: unset;
+  }
+}
