@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="slides-wrapper">
+        <div class="slide slide-1">
+            <div class="main">
+              <img
+                class="logotype"
+                src="https://bertonisolutions.com/hubfs/Design%20assets/Shared%20images/Logotype_Bertoni_Solutions.webp"
+              />
+              <div class="main-form">
+                <div class="form-header">Remote team budget calculator</div>
+                <div class="form-content">
+                  <div class="form-step">Let’s start with your name.</div>
+                  <div class="form-indication">Enter your full name</div>
+                  <input
+                    name="name"
+                    id="name"
+                    class="form-field"
+                    type="text"
+                    placeholder="eg. Sarah Smith"
+                    required
+                  />
+                </div>
+                <div class="form-buttons">
+                  <button
+                    class="button button-primary"
+                    type="button"
+                    onclick="scrollToSlide(1, 'name')"
+                  >
+                  Get Started
+                  </button>
+                </div>
+    
+                <div class="form-progress">
+                  <div class="step active"></div>
+                  <div class="step"></div>
+                  <div class="step"></div>
+                  <div class="step"></div>
+                </div>
+              </div>
+            </div>
+            <div class="aside">
+              <div class="aside-title">
+                How much does it cost to build my remote tech team?
+              </div>
+              <div class="aside-description">
+                Understand the potential cost savings of nearshoring compared to
+                in-house hiring.
+              </div>
+            </div>
+          </div>
+
+
+
+      <div class="slide slide-2">
+        <div class="main">
+          <div class="main-form">
+            <div class="form-content">
+              <div class="form-step">Team composition</div>
+              <div class="form-indication">
+                Please define the essential roles and seniority needed.
+              </div>
+              <div class="role-seniority">
+                <select
+                name="role-selector"
+                id="role-selector"
+                class="form-select form-field"
+              >
+                <option value="Fullstack Software Developer">
+                  Fullstack Software Developer
+                </option>
+                <option value="Backend Software Developer">
+                  Backend Software Developer
+                </option>
+                <option value="Frontend Software Developer">
+                  Frontend Software Developer
+                </option>
+                <option value="React Native Developer">
+                  React Native Developer
+                </option>
+                <option value="Android and iOS Native Developer">
+                  Android and iOS Native Developer
+                </option>
+                <option value="Java Full Stack Developer">
+                  Java Full Stack Developer
+                </option>
+                <option value="Cloud Specialist">Cloud Specialist</option>
+                <option value="Azure Data Engineer">Azure Data Engineer</option>
+                <option value="Azure DevOps Engineer">
+                  Azure DevOps Engineer
+                </option>
+                <option value="Data Scientist">Data Scientist</option>
+                <option value="UX/UI Designer">UX/UI Designer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Cybersecurity Specialist">
+                  Cybersecurity Specialist
+                </option>
+                <option value="Machine Learning Engineer">
+                  Machine Learning Engineer
+                </option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="Business Analyst">Business Analyst</option>
+                <option value="Power BI Specialist">Power BI Specialist</option>
+              </select>
+              <select
+                name="seniority-selector"
+                id="seniority-selector"
+                class="form-select form-field"
+                style="width: auto;"
+              >
+                <option value="Junior">Junior</option>
+                <option value="Mid">Mid</option>
+                <option value="Senior">Senior</option>
+              </select>
+              <button type="button" class="button button-tertiary" onclick="addRole()">
+                Add role
+              </button>
+            </div>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Role</th>
+                    <th>Seniority</th>
+                    <th>Quantity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="form-buttons">
+              <button
+                class="button button-secondary"
+                type="button"
+                onclick="scrollToSlide(0)"
+              >
+                ←
+              </button>
+              <button
+                class="button button-primary"
+                type="button"
+                onclick="scrollToSlide(2, 'email')"
+              >
+                Let me see the results
+              </button>
+            </div>
+            <div class="form-progress">
+              <div class="step"></div>
+              <div class="step active"></div>
+              <div class="step"></div>
+              <div class="step"></div>
+            </div>
+          </div>
+        </div>
+        <div class="aside">
+          <div class="aside-review">
+            <div class="aside-review-title">
+              &quot;Dedication to excellence, quality of talent, and ownership
+              involvement are the pillars that define our partnership.&quot;
+            </div>
+            <svg
+              class="aside-review-score"
+              width="152"
+              height="24"
+              viewBox="0 0 152 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z"
+                fill="#FFCD29"
+              />
+              <path
+                d="M44 0L46.6942 8.2918H55.4127L48.3593 13.4164L51.0534 21.7082L44 16.5836L36.9466 21.7082L39.6407 13.4164L32.5873 8.2918H41.3058L44 0Z"
+                fill="#FFCD29"
+              />
+              <path
+                d="M76 0L78.6942 8.2918H87.4127L80.3593 13.4164L83.0534 21.7082L76 16.5836L68.9466 21.7082L71.6407 13.4164L64.5873 8.2918H73.3058L76 0Z"
+                fill="#FFCD29"
+              />
+              <path
+                d="M108 0L110.694 8.2918H119.413L112.359 13.4164L115.053 21.7082L108 16.5836L100.947 21.7082L103.641 13.4164L96.5873 8.2918H105.306L108 0Z"
+                fill="#FFCD29"
+              />
+              <path
+                d="M140 0L142.694 8.2918H151.413L144.359 13.4164L147.053 21.7082L140 16.5836L132.947 21.7082L135.641 13.4164L128.587 8.2918H137.306L140 0Z"
+                fill="#FFCD29"
+              />
+            </svg>
+            <div class="aside-review-reviewer">
+              <div class="reviewer">US-based global consulting firm</div>
+              <div class="reviewer-role">*Client name subject to NDA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      <div class="slide slide-3">
+        <div class="main">
+          <div class="main-form">
+            <div class="form-content">
+              <div class="form-step">
+                Good choices!
+                <br />
+                Your results are coming...
+              </div>
+              <div class="form-indication">
+                We’ll send a copy of your results to your email.
+              </div>
+              <input
+                name="email"
+                id="email"
+                class="form-field"
+                type="email"
+                placeholder="hello@yourwebsite.com"
+                required
+              />
+            </div>
+            <div class="form-buttons">
+              <button
+                class="button button-secondary"
+                type="button"
+                onclick="scrollToSlide(1)"
+              >
+                ←
+              </button>
+              <button
+                class="button button-primary"
+                type="button"
+                onclick="scrollToSlide(3, 'email')"
+              >
+                Let me see the results
+              </button>
+            </div>
+            <div class="form-progress">
+              <div class="step"></div>
+              <div class="step"></div>
+              <div class="step active"></div>
+              <div class="step"></div>
+            </div>
+          </div>
+        </div>
+        <div class="aside">
+          <div class="aside-review">
+            <div class="aside-review-title">
+              &quot;Dedication to excellence, quality of talent, and ownership
+              involvement are the pillars that define our partnership.&quot;
+            </div>
+            <svg
+              class="aside-review-score"
+              width="152"
+              height="24"
+              viewBox="0 0 152 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z"
+                fill="#FFCD29"
+              />
+              <path
+                d="M44 0L46.6942 8.2918H55.4127L48.3593 13.4164L51.0534 21.7082L44 16.5836L36.9466 21.7082L39.6407 13.4164L32.5873 8.2918H41.3058L44 0Z"
+                fill="#FFCD29"
+              />
+              <path
+                d="M76 0L78.6942 8.2918H87.4127L80.3593 13.4164L83.0534 21.7082L76 16.5836L68.9466 21.7082L71.6407 13.4164L64.5873 8.2918H73.3058L76 0Z"
+                fill="#FFCD29"
+              />
+              <path
+                d="M108 0L110.694 8.2918H119.413L112.359 13.4164L115.053 21.7082L108 16.5836L100.947 21.7082L103.641 13.4164L96.5873 8.2918H105.306L108 0Z"
+                fill="#FFCD29"
+              />
+              <path
+                d="M140 0L142.694 8.2918H151.413L144.359 13.4164L147.053 21.7082L140 16.5836L132.947 21.7082L135.641 13.4164L128.587 8.2918H137.306L140 0Z"
+                fill="#FFCD29"
+              />
+            </svg>
+            <div class="aside-review-reviewer">
+              <div class="reviewer">US-based global consulting firm</div>
+              <div class="reviewer-role">*Client name subject to NDA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide-4">
+        <div class="main">
+          <div class="main-form">
+            <div class="main-form-header">
+              <div class="form-step">Here are your results!</div>
+              <div class="form-indication">
+                <span>
+                  <span class="form-indication-span">
+                    Hiring remote tech talent from Latin America would cost you
+                    around 
+                  </span>
+                  <span class="form-indication-span2">$725.000</span>
+                  <span class="form-indication-span3"> per year.</span>
+                </span>
+              </div>
+            </div>
+            <div class="saving-total">54% total of saving</div>
+            <div class="results">
+              <div class="results-header">Annual potential cost by role:</div>
+              <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                    <th>Quantity</th>
+                    <th>Local</th>
+                    <th>Nearshoring</th>
+                    </tr>
+                </thead>
+              </table>
+              <div class="results-footnote">
+                <div class="results-footnote-header">
+                  In addition to salaries, consider these hidden costs
+                  associated with hiring new employees on site:
+                </div>
+                <div class="results-footnote-list">
+                  <div class="results-footnote-li">
+                    <span>
+                      <span class="results-footnote-li-span"
+                        >Recruitment fees:</span
+                      >
+                      <span class="results-footnote-li-span2">
+                        Often 20% of the annual salary.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="results-footnote-li">
+                    <span>
+                      <span class="results-footnote-li-span3">
+                        Training and onboarding:
+                      </span>
+                      <span class="results-footnote-li-span4">
+                        Can cost up to $10,000 per employee.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-progress">
+              <div class="step"></div>
+              <div class="step"></div>
+              <div class="step"></div>
+              <div class="step active"></div>
+            </div>
+          </div>
+        </div>
+        <div class="aside">
+          <div class="aside-note">
+            <div class="aside-note-content">
+              Please note: Salary ranges can vary depending on experience,
+              location, and specific skills. This is a general estimate and may
+              not be perfectly accurate for your specific situation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script>
+        /*Scrolling animation*/
+    function scrollToSlide(slideIndex, checkValueId = "") {
+    console.log("clicked");
+    if (checkValueId != "") {
+        const checkValue = document.getElementById(checkValueId);
+        if (!checkValue.value) {
+        checkValue.focus();
+        return;
+        }
+    }
+    const slidesWrapper = document.getElementById("slides-wrapper");
+    const slideWidth = window.innerWidth;
+    slidesWrapper.scrollTo({
+        left: slideWidth * slideIndex,
+        behavior: "smooth",
+    });
+    }
+
+    scrollToSlide(3);
+
+    /*Role selector*/
+    const pickedRoles = {
+        
+            "Fullstack Software Developer-Junior": 1,
+            "Backend Software Developer-Mid": 1,
+            "Frontend Software Developer-Senior": 1,
+        
+    };
+    const roleSelector = document.getElementById("role-selector");
+    const senioritySelector = document.getElementById("seniority-selector");
+    
+    function addRole() {
+      const role = roleSelector.value;
+      const seniority = senioritySelector.value;
+      const key = `${role}-${seniority}`;
+    
+      if (pickedRoles[key]) {
+        pickedRoles[key]++;
+      } else {
+        pickedRoles[key] = 1;
+      }
+    
+      updateTable();
+    }
+    
+    function removeOne(role, seniority) {
+      const key = `${role}-${seniority}`;
+    
+      if (pickedRoles[key]) {
+        pickedRoles[key]--;
+        if (pickedRoles[key] === 0) {
+          delete pickedRoles[key];
+        }
+      }
+    
+      updateTable();
+    }
+    
+    function addOne(role, seniority) {
+      const key = `${role}-${seniority}`;
+    
+      if (pickedRoles[key]) {
+        pickedRoles[key]++;
+      } else {
+        pickedRoles[key] = 1;
+      }
+    
+      updateTable();
+    }
+    
+    function updateTable() {
+      const table = document.querySelector("table tbody");
+      table.innerHTML = "";
+    
+      for (const key in pickedRoles) {
+        const [role, seniority] = key.split("-");
+        const count = pickedRoles[key];
+    
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${role}</td>
+          <td>${seniority}</td>
+          <td>
+            <button type="button" class="remove-btn">-</button>
+            ${count}
+            <button type="button" class="add-btn">+</button>
+          </td>
+        `;
+        table.appendChild(row);
+        row.querySelector(".remove-btn").addEventListener("click", () => removeOne(role, seniority));
+        row.querySelector(".add-btn").addEventListener("click", () => addOne(role, seniority));
+      }
+    }
+
+    updateTable();
+
+    /*Result calculation*/
+
+    const resultTable = document.querySelector(".results-table");
+    // append the body
+    resultTable.appendChild(document.createElement("tbody"));
+    const resultTableBody = resultTable.querySelector("tbody");
+    // for each role in the pickedRoles, calculate the cost
+    for (const key in pickedRoles) {
+      const [role, seniority] = key.split("-");
+      const count = pickedRoles[key];
+      const localCost = 50000;
+      const nearshoringCost = 60000;
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${role}</td>
+        <td>${count}</td>
+        <td>${localCost}</td>
+        <td>${nearshoringCost}</td>
+      `;
+      resultTableBody.appendChild(row);
+    }
+
+
+    </script>
+  </body>
+</html>
