@@ -8,56 +8,54 @@
   </head>
   <body>
     <form id="slides-wrapper">
-        <div class="slide slide-1">
-            <div class="main">
-              <img
-                class="logotype"
-                src="https://bertonisolutions.com/hubfs/Design%20assets/Shared%20images/Logotype_Bertoni_Solutions.webp"
+      <div class="slide slide-1">
+        <div class="main">
+          <img
+            class="logotype"
+            src="https://bertonisolutions.com/hubfs/Design%20assets/Shared%20images/Logotype_Bertoni_Solutions.webp"
+          />
+          <div class="main-form">
+            <div class="form-header">Remote team budget calculator</div>
+            <div class="form-content">
+              <div class="form-step">Let’s start with your name.</div>
+              <div class="form-indication">Enter your full name</div>
+              <input
+                name="name"
+                id="name"
+                class="form-field"
+                type="text"
+                placeholder="eg. Sarah Smith"
+                required
               />
-              <div class="main-form">
-                <div class="form-header">Remote team budget calculator</div>
-                <div class="form-content">
-                  <div class="form-step">Let’s start with your name.</div>
-                  <div class="form-indication">Enter your full name</div>
-                  <input
-                    name="name"
-                    id="name"
-                    class="form-field"
-                    type="text"
-                    placeholder="eg. Sarah Smith"
-                    required
-                  />
-                </div>
-                <div class="form-buttons">
-                  <button
-                    class="button button-primary"
-                    type="button"
-                    onclick="scrollToSlide(1, 'name')"
-                  >
-                  Get Started
-                  </button>
-                </div>
-    
-                <div class="form-progress">
-                  <div class="step active"></div>
-                  <div class="step"></div>
-                  <div class="step"></div>
-                  <div class="step"></div>
-                </div>
-              </div>
             </div>
-            <div class="aside">
-              <div class="aside-title">
-                How much does it cost to build my remote tech team?
-              </div>
-              <div class="aside-description">
-                Understand the potential cost savings of nearshoring compared to
-                in-house hiring.
-              </div>
+            <div class="form-buttons">
+              <button
+                class="button button-primary"
+                type="button"
+                onclick="scrollToSlide(1, 'name')"
+              >
+                Get Started
+              </button>
+            </div>
+
+            <div class="form-progress">
+              <div class="step active"></div>
+              <div class="step"></div>
+              <div class="step"></div>
+              <div class="step"></div>
             </div>
           </div>
-
-
+        </div>
+        <div class="aside">
+          <div class="aside-title">
+            How much does it cost to build my remote tech team?
+          </div>
+          <div class="aside-description">
+            Understand the potential cost savings of nearshoring compared to
+            in-house hiring.
+          </div>
+        </div>
+      </div>
 
       <div class="slide slide-2">
         <div class="main">
@@ -69,61 +67,69 @@
               </div>
               <div class="role-seniority">
                 <select
-                name="role-selector"
-                id="role-selector"
-                class="form-select form-field"
-              >
-                <option value="Fullstack Software Developer">
-                  Fullstack Software Developer
-                </option>
-                <option value="Backend Software Developer">
-                  Backend Software Developer
-                </option>
-                <option value="Frontend Software Developer">
-                  Frontend Software Developer
-                </option>
-                <option value="React Native Developer">
-                  React Native Developer
-                </option>
-                <option value="Android and iOS Native Developer">
-                  Android and iOS Native Developer
-                </option>
-                <option value="Java Full Stack Developer">
-                  Java Full Stack Developer
-                </option>
-                <option value="Cloud Specialist">Cloud Specialist</option>
-                <option value="Azure Data Engineer">Azure Data Engineer</option>
-                <option value="Azure DevOps Engineer">
-                  Azure DevOps Engineer
-                </option>
-                <option value="Data Scientist">Data Scientist</option>
-                <option value="UX/UI Designer">UX/UI Designer</option>
-                <option value="QA Engineer">QA Engineer</option>
-                <option value="Cybersecurity Specialist">
-                  Cybersecurity Specialist
-                </option>
-                <option value="Machine Learning Engineer">
-                  Machine Learning Engineer
-                </option>
-                <option value="Project Manager">Project Manager</option>
-                <option value="Business Analyst">Business Analyst</option>
-                <option value="Power BI Specialist">Power BI Specialist</option>
-              </select>
-              <select
-                name="seniority-selector"
-                id="seniority-selector"
-                class="form-select form-field"
-                style="width: auto;"
-              >
-                <option value="Junior">Junior</option>
-                <option value="Mid">Mid</option>
-                <option value="Senior">Senior</option>
-              </select>
-              <button type="button" class="button button-tertiary" onclick="addRole()">
-                Add role
-              </button>
-            </div>
-            <table>
+                  name="role-selector"
+                  id="role-selector"
+                  class="form-select form-field"
+                >
+                  <option value="Fullstack Software Developer">
+                    Fullstack Software Developer
+                  </option>
+                  <option value="Backend Software Developer">
+                    Backend Software Developer
+                  </option>
+                  <option value="Frontend Software Developer">
+                    Frontend Software Developer
+                  </option>
+                  <option value="React Native Developer">
+                    React Native Developer
+                  </option>
+                  <option value="Android and iOS Native Developer">
+                    Android and iOS Native Developer
+                  </option>
+                  <option value="Java Full Stack Developer">
+                    Java Full Stack Developer
+                  </option>
+                  <option value="Cloud Specialist">Cloud Specialist</option>
+                  <option value="Azure Data Engineer">
+                    Azure Data Engineer
+                  </option>
+                  <option value="Azure DevOps Engineer">
+                    Azure DevOps Engineer
+                  </option>
+                  <option value="Data Scientist">Data Scientist</option>
+                  <option value="UX/UI Designer">UX/UI Designer</option>
+                  <option value="QA Engineer">QA Engineer</option>
+                  <option value="Cybersecurity Specialist">
+                    Cybersecurity Specialist
+                  </option>
+                  <option value="Machine Learning Engineer">
+                    Machine Learning Engineer
+                  </option>
+                  <option value="Project Manager">Project Manager</option>
+                  <option value="Business Analyst">Business Analyst</option>
+                  <option value="Power BI Specialist">
+                    Power BI Specialist
+                  </option>
+                </select>
+                <select
+                  name="seniority-selector"
+                  id="seniority-selector"
+                  class="form-select form-field"
+                  style="width: auto"
+                >
+                  <option value="Junior">Junior</option>
+                  <option value="Mid">Mid</option>
+                  <option value="Senior">Senior</option>
+                </select>
+                <button
+                  type="button"
+                  class="button button-tertiary"
+                  onclick="addRole()"
+                >
+                  Add role
+                </button>
+              </div>
+              <table>
                 <thead>
                   <tr>
                     <th>Role</th>
@@ -131,30 +137,30 @@
                     <th>Quantity</th>
                   </tr>
                 </thead>
-                <tbody>
-                </tbody>
-            </table>
-            <div class="form-buttons">
-              <button
-                class="button button-secondary"
-                type="button"
-                onclick="scrollToSlide(0)"
-              >
-                ←
-              </button>
-              <button
-                class="button button-primary"
-                type="button"
-                onclick="scrollToSlide(2, 'email')"
-              >
-                Let me see the results
-              </button>
-            </div>
-            <div class="form-progress">
-              <div class="step"></div>
-              <div class="step active"></div>
-              <div class="step"></div>
-              <div class="step"></div>
+                <tbody></tbody>
+              </table>
+              <div class="form-buttons">
+                <button
+                  class="button button-secondary"
+                  type="button"
+                  onclick="scrollToSlide(0)"
+                >
+                  ←
+                </button>
+                <button
+                  class="button button-primary"
+                  type="button"
+                  onclick="scrollToSlide(2, 'email')"
+                >
+                  Let me see the results
+                </button>
+              </div>
+              <div class="form-progress">
+                <div class="step"></div>
+                <div class="step active"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -200,10 +206,7 @@
           </div>
         </div>
       </div>
-      
-      
-      
-      
+
       <div class="slide slide-3">
         <div class="main">
           <div class="main-form">
@@ -302,7 +305,9 @@
                     Hiring remote tech talent from Latin America would cost you
                     around 
                   </span>
-                  <span class="form-indication-span2">$725.000</span>
+                  <span id="nearshoring-cost" class="form-indication-span2"
+                    >$725.000</span
+                  >
                   <span class="form-indication-span3"> per year.</span>
                 </span>
               </div>
@@ -312,12 +317,12 @@
               <div class="results-header">Annual potential cost by role:</div>
               <table class="results-table">
                 <thead>
-                    <tr>
-                        <th>Position</th>
+                  <tr>
+                    <th>Position</th>
                     <th>Quantity</th>
                     <th>Local</th>
                     <th>Nearshoring</th>
-                    </tr>
+                  </tr>
                 </thead>
               </table>
               <div class="results-footnote">
@@ -369,84 +374,82 @@
       </div>
     </form>
     <script>
-        /*Scrolling animation*/
-    function scrollToSlide(slideIndex, checkValueId = "") {
-    console.log("clicked");
-    if (checkValueId != "") {
-        const checkValue = document.getElementById(checkValueId);
-        if (!checkValue.value) {
-        checkValue.focus();
-        return;
+      /*Scrolling animation*/
+      function scrollToSlide(slideIndex, checkValueId = "") {
+        console.log("clicked");
+        if (checkValueId != "") {
+          const checkValue = document.getElementById(checkValueId);
+          if (!checkValue.value) {
+            checkValue.focus();
+            return;
+          }
         }
-    }
-    const slidesWrapper = document.getElementById("slides-wrapper");
-    const slideWidth = window.innerWidth;
-    slidesWrapper.scrollTo({
-        left: slideWidth * slideIndex,
-        behavior: "smooth",
-    });
-    }
+        const slidesWrapper = document.getElementById("slides-wrapper");
+        const slideWidth = window.innerWidth;
+        slidesWrapper.scrollTo({
+          left: slideWidth * slideIndex,
+          behavior: "smooth",
+        });
 
-    /*Role selector*/
-    const pickedRoles = {
-        
-            "Fullstack Software Developer-Junior": 1,
-            "Backend Software Developer-Mid": 1,
-            "Frontend Software Developer-Senior": 1,
-        
-    };
-    const roleSelector = document.getElementById("role-selector");
-    const senioritySelector = document.getElementById("seniority-selector");
-    
-    function addRole() {
-      const role = roleSelector.value;
-      const seniority = senioritySelector.value;
-      const key = `${role}-${seniority}`;
-    
-      if (pickedRoles[key]) {
-        pickedRoles[key]++;
-      } else {
-        pickedRoles[key] = 1;
-      }
-    
-      updateTable();
-    }
-    
-    function removeOne(role, seniority) {
-      const key = `${role}-${seniority}`;
-    
-      if (pickedRoles[key]) {
-        pickedRoles[key]--;
-        if (pickedRoles[key] === 0) {
-          delete pickedRoles[key];
+        if (slideIndex === 3) {
+          calculateResults();
         }
       }
-    
-      updateTable();
-    }
-    
-    function addOne(role, seniority) {
-      const key = `${role}-${seniority}`;
-    
-      if (pickedRoles[key]) {
-        pickedRoles[key]++;
-      } else {
-        pickedRoles[key] = 1;
+
+      /*Role selector*/
+      const pickedRoles = {};
+      const roleSelector = document.getElementById("role-selector");
+      const senioritySelector = document.getElementById("seniority-selector");
+
+      function addRole() {
+        const role = roleSelector.value;
+        const seniority = senioritySelector.value;
+        const key = `${role}-${seniority}`;
+
+        if (pickedRoles[key]) {
+          pickedRoles[key]++;
+        } else {
+          pickedRoles[key] = 1;
+        }
+
+        updateTable();
       }
-    
-      updateTable();
-    }
-    
-    function updateTable() {
-      const table = document.querySelector("table tbody");
-      table.innerHTML = "";
-    
-      for (const key in pickedRoles) {
-        const [role, seniority] = key.split("-");
-        const count = pickedRoles[key];
-    
-        const row = document.createElement("tr");
-        row.innerHTML = `
+
+      function removeOne(role, seniority) {
+        const key = `${role}-${seniority}`;
+
+        if (pickedRoles[key]) {
+          pickedRoles[key]--;
+          if (pickedRoles[key] === 0) {
+            delete pickedRoles[key];
+          }
+        }
+
+        updateTable();
+      }
+
+      function addOne(role, seniority) {
+        const key = `${role}-${seniority}`;
+
+        if (pickedRoles[key]) {
+          pickedRoles[key]++;
+        } else {
+          pickedRoles[key] = 1;
+        }
+
+        updateTable();
+      }
+
+      function updateTable() {
+        const table = document.querySelector("table tbody");
+        table.innerHTML = "";
+
+        for (const key in pickedRoles) {
+          const [role, seniority] = key.split("-");
+          const count = pickedRoles[key];
+
+          const row = document.createElement("tr");
+          row.innerHTML = `
           <td>${role}</td>
           <td>${seniority}</td>
           <td>
@@ -455,35 +458,44 @@
             <button type="button" class="add-btn">+</button>
           </td>
         `;
-        table.appendChild(row);
-        row.querySelector(".remove-btn").addEventListener("click", () => removeOne(role, seniority));
-        row.querySelector(".add-btn").addEventListener("click", () => addOne(role, seniority));
+          table.appendChild(row);
+          row
+            .querySelector(".remove-btn")
+            .addEventListener("click", () => removeOne(role, seniority));
+          row
+            .querySelector(".add-btn")
+            .addEventListener("click", () => addOne(role, seniority));
+        }
       }
-    }
 
-    /*Result calculation*/
+      /*Result calculation*/
 
-    const resultTable = document.querySelector(".results-table");
-    // append the body
-    resultTable.appendChild(document.createElement("tbody"));
-    const resultTableBody = resultTable.querySelector("tbody");
-    // for each role in the pickedRoles, calculate the cost
-    for (const key in pickedRoles) {
-      const [role, seniority] = key.split("-");
-      const count = pickedRoles[key];
-      const localCost = 50000;
-      const nearshoringCost = 60000;
-      const row = document.createElement("tr");
-      row.innerHTML = `
+      function calculateResults() {
+        const resultTable = document.querySelector(".results-table");
+        // append the body
+        resultTable.appendChild(document.createElement("tbody"));
+        const resultTableBody = resultTable.querySelector("tbody");
+        // for each role in the pickedRoles, calculate the cost
+        for (const key in pickedRoles) {
+          const [role, seniority] = key.split("-");
+          const count = pickedRoles[key];
+          const localCost = 50000;
+          const nearshoringCost = 60000;
+          const row = document.createElement("tr");
+          row.innerHTML = `
         <td>${role}</td>
         <td>${count}</td>
-        <td>${localCost}</td>
-        <td>${nearshoringCost}</td>
+        <td>${localCost * count}</td>
+        <td>${nearshoringCost * count}</td>
       `;
-      resultTableBody.appendChild(row);
-    }
+          resultTableBody.appendChild(row);
+        }
 
-
+        // locate #nearshoring-cost and update the value
+        var nearshoringCost = document.getElementById("nearshoring-cost");
+        nearshoringCost.innerHTML = "$" + 60000 * pickedRoles.length;
+      }
     </script>
   </body>
 </html>
+
